@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.some-background{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://www.barraques.cat/pngfile/big/0-3940_wallpapers-full-hd-1920-1080-widescreen-awesome-hi.jpg");
+
+}
+h1{
+    font-family: Courier;
+    color: brown;
+    text-align: center;
+    padding: 17px;
+    display: flexbox;
+    
+}
+.div1{
+    color: #ffffff;
+    height: 50%;
+    width: 40%;
+    left: 29%;
+    top: 4px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 50%;
+    background-color: #ffb76b;
+    border: dashed;
+    position: absolute;
+    border-radius: 4%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #888888;
+}
+.div2{
+    background-color: bisque;
+    position: absolute;
+    top: 33%;
+    left: 3%;
+    height: 67%;
+    width: 94%;
+    border-radius: 3%;
+}
+img{
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+    left: 64%;
+    top: 11%;
+    height: 53%;
+    width: 23%;
+}
+
+.we{
+    position: absolute;
+    top: 7px;
+    left: 31px;
+    right: 73%;
+    height: 34%;
+    background-color: #ffffff;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 0px 0px 10px #888888;
+}
+.inter{
+    position: absolute;
+    top: 146px;
+    left: 31px;
+    right: 73%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 0px 0px 10px #888888;
+}
+.table{
+    text-align: center;
+}
