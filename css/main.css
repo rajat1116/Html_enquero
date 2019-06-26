@@ -24,17 +24,17 @@ h1{
 }
 .div1{
     color: #ffffff;
-    height: 50%;
+    height: 46%;
     width: 40%;
     left: 29%;
-    top: 4px;
+    top: 27px;
     font-size: 10px;
     letter-spacing: 1px;
     line-height: 50%;
     background-color: #ffb76b;
     border: dashed;
     position: absolute;
-    border-radius: 4%;
+    border-radius: 3%;
     padding: 10px;
     box-shadow: 0px 0px 10px #888888;
 }
@@ -64,20 +64,36 @@ img{
     right: 73%;
     height: 34%;
     background-color: #ffffff;
-    border-radius: 5%;
+    border-radius: 3%;
     text-align: center;
     box-shadow: 0px 0px 10px #888888;
 }
-.inter{
+.hobbies{
     position: absolute;
-    top: 146px;
+    top: 156px;
     left: 31px;
     right: 73%;
     height: 60%;
     background-color: #ffffff;
-    border-radius: 5%;
+    border-radius: 3%;
     text-align: center;
     box-shadow: 0px 0px 10px #888888;
+}
+.edu{
+    position: absolute;
+    top: 155px;
+    left: 28%;
+    right: 27%;
+    height: 60%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 2%;
+    background-color: #ffffff;
+    border-radius: 3%;
+    text-align: center;
+    box-shadow: 0px 0px 10px #888888;
+    
+
 }
 .table{
     text-align: center;
