@@ -67,16 +67,16 @@ var forecast=[{
    //    return Math.floor(Math.random() * Math.floor(max));
    //  }
   
-   function dynam(){
-      var forcst= document.getElementById("weather");
-       console.log(forcst)
-   for(var k in forecast[0]){
-      console.log([k]);
-      setTimeout(()=>{
-         forcst.innerHTML=JSON.stringify(forecast[0][JSON.stringify(k)]);
-            },3000)
+//    function dynam(){
+//       var forcst= document.getElementById("weather");
+//        console.log(forcst)
+//    for(var k in forecast[0]){
+//       console.log([k]);
+//       setTimeout(()=>{
+//          forcst.innerHTML=JSON.stringify(forecast[0][JSON.stringify(k)]);
+//             },3000)
       
-   }
+//    }
    
-}
-dynam();
+// }
+// dynam();

@@ -19,7 +19,7 @@
     <div class="div2">
         <div class="we">
             <p style="text-align: center; font-family: 'Comfortaa', cursive"><i class="fa fa-briefcase"></i> <b>Work Experience</b></p>
-            <table style="padding-top:0%; padding-left: 15%; text-align: center;">
+            <table style="padding-top:0%; padding-left: 15%; text-align: center; color: whitesmoke">
                 <tr style="text-align: center; font-family: 'Rubik', sans-serif;">
                     <td>Work</td>
                     <td>Timeline</td>
@@ -29,7 +29,7 @@
                     <td>--------------</td>
                 </tr>
                 <tr style="text-align: center; font-family: 'Barlow Semi Condensed', sans-serif;">
-                    <td><a href="https://enquero.com/" style="color:black;" target="_blank">Enquero Global</a></td>
+                    <td><a href="https://enquero.com/" style="color: whitesmoke;" target="_blank">Enquero Global</a></td>
                     <td>Current</td>
                 </tr>
             </table>
@@ -46,20 +46,20 @@
         <div class="edu">
             <p style="text-align: center; font-family: 'Comfortaa', cursive"> <i class="fa fa-university"></i> <b>Education & Graduation</b></p>
             <table cellpadding = 4px; width = 100%;> 
-                <tr tr style="text-align: center; font-family: 'Rubik', sans-serif;">
+                <tr tr style="text-align: center; font-family: 'Rubik', sans-serif; color: whitesmoke">
                     <td >School / College</td>
                     <td >Timeline</td>
                 </tr>
-                <tr style="text-align: center; font-family: 'Barlow Semi Condensed', sans-serif;">
+                <tr style="text-align: center; font-family: 'Barlow Semi Condensed', sans-serif; color: whitesmoke">
                     <td>VIT, Vellore</td>
                     <td>2015 - 2019</td>
                 </tr>
                 <br />
-                <tr style="text-align: center; font-family: 'Barlow Semi Condensed', sans-serif;">
+                <tr style="text-align: center; font-family: 'Barlow Semi Condensed', sans-serif; color: whitesmoke">
                     <td>Springdale’s Children School </td>
                     <td>2013 - 2015</td>
                 </tr>
-                <tr style="text-align: center; font-family: 'Barlow Semi Condensed', sans-serif;">
+                <tr style="text-align: center; font-family: 'Barlow Semi Condensed', sans-serif;color: whitesmoke">
                     <td>Sri Chaitanya Techno School </td>
                     <td>2010 - 2013</td>
                 </tr>
@@ -75,13 +75,16 @@
             <p style="text-align: left; padding-left: 3%; font-family: 'Barlow Semi Condensed', sans-serif;"><b>4. Women safety device with GPS tracking</b> - A device that helps a woman to raise alarm when she is attacked.</p>
 
         </div>
+        <div  id="gitReq">
+<a onclick="git()" style="text-align: center; font-family: 'Comfortaa', cursive"><b>Get Git</b></a><br>
+</div>
 
     </div>
     <div class="div1">
         <!-- <div class="profileImage"> -->
             <img src="image05.jpg" height="42" width="42" style="border-radius: 15%;">
         <!-- </div> -->
-            <p style="font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 20px; letter-spacing: 2px;"><b>Rajat Pandit</b></p>
+            <p style="font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 2px;"><b>Rajat Pandit</b></p>
             <p style="font-family: 'Montserrat', sans-serif;">Raipur, Chattisgarh</p>
             <br />
             <p class="skillSet" style="font-family: 'Oswald', sans-serif; font-weight: 400; font-size: 15px; "><b>Skills</b></p>
@@ -105,8 +108,20 @@
         </div> -->
     </body>
     <script>
-        var request = new XMLHttpRequest();
+    
+    function git(){   var request = new XMLHttpRequest();
         request.open('GET','https://api.github.com/users/rajat1116/repos',true);
         request.send();
+        function getData(){
+var x=JSON.parse(this.responseText);
+//console.log(this.responseText)
+var git=document.getElementById("gitReq")
+console.log(git)
+for(let i=0;i<x.length;i++){
+   //console.log("hi")
+    git.innerHTML+=`<a href="${x[i]["html_url"]}">${x[i]["name"]}</a> <br>`
+}console.log(git)
+        }
+        request.onload=getData;}
     </script>
 </html>
