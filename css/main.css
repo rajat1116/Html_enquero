@@ -39,7 +39,7 @@ h1{
     box-shadow: 0px 0px 10px #888888;
 }
 .div2{
-    background-color: bisque;
+    /* background-color: bisque; */
     position: absolute;
     top: 33%;
     left: 3%;
