@@ -112,19 +112,21 @@
     </body>
     <script>
     
-    function git(){   var request = new XMLHttpRequest();
+    function git(){   
+        var request = new XMLHttpRequest();
         request.open('GET','https://api.github.com/users/rajat1116/repos',true);
         request.send();
         function getData(){
-var x=JSON.parse(this.responseText);
-//console.log(this.responseText)
-var git=document.getElementById("gitReq")
-console.log(git)
-for(let i=0;i<x.length;i++){
-   //console.log("hi")
-    git.innerHTML+=`<a href="${x[i]["html_url"]}">${x[i]["name"]}</a> <br>`
-}console.log(git)
-        }
-        request.onload=getData;}
+            var x=JSON.parse(this.responseText);
+            //console.log(this.responseText)
+            var git=document.getElementById("gitReq")
+            console.log(git)
+            for(let i=0;i<x.length;i++){
+                //console.log("hi")
+                git.innerHTML+=`<a href="${x[i]["html_url"]}">${x[i]["name"]}</a> <br>`
+                }
+                console.log(git)
+                }
+                request.onload=getData;}
     </script>
 </html>
